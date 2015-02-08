@@ -1,0 +1,59 @@
+[Tue May 20 11:50:05 IST 2014] Run: run0 - start
+[Tue May 20 11:50:05 IST 2014] Run: run0, Strategy: TNFunctionalTesting - start
+Started 000_Compile_Junits #456
+Started by command line by anonymous
+[EnvInject] - Loading node environment variables.
+Building remotely on vmbibh02 in workspace C:\Jenkins\workspace\000_Compile_Junits
+Updating http://svnva.ame.ad.sag:1818/svn/sag/tn/trunk/test-automation/job_targets at revision '2014-05-20T11:52:26.485 +0530'
+At revision 1252325
+Updating http://svndae.hq.sag:1818/svn/sag/test-automation/TN/junit at revision '2014-05-20T11:52:26.485 +0530'
+At revision 2643964
+Updating http://svndae.hq.sag:1818/svn/sag/test-automation/Common/HUDSON/ALF at revision '2014-05-20T11:52:26.485 +0530'
+At revision 2643964
+Updating http://svndae.hq.sag:1818/svn/sag/test-automation/Common/HUDSON/reusable-ant-targets at revision '2014-05-20T11:52:26.485 +0530'
+At revision 2643964
+Updating http://svndae.hq.sag:1818/svn/sag/test-automation/TN/common_job_targets at revision '2014-05-20T11:52:26.485 +0530'
+At revision 2643964
+no change for http://svnva.ame.ad.sag:1818/svn/sag/tn/trunk/test-automation/job_targets since the previous build
+no change for http://svndae.hq.sag:1818/svn/sag/test-automation/TN/junit since the previous build
+no change for http://svndae.hq.sag:1818/svn/sag/test-automation/Common/HUDSON/ALF since the previous build
+no change for http://svndae.hq.sag:1818/svn/sag/test-automation/Common/HUDSON/reusable-ant-targets since the previous build
+no change for http://svndae.hq.sag:1818/svn/sag/test-automation/TN/common_job_targets since the previous build
+No emails were triggered.
+[000_Compile_Junits] $ cmd.exe /C '"C:\apache-ant-1.7.1\bin\ant.bat -file job-targets.xml -Disinstance=${installdir}\IntegrationServer\instances\default -Dinstalldir=C:\SoftwareAG -DfingerprintFileName=current.properties -Dtn.machinename=vmbibh02 "-DEMAIL=spol@softwareag.com,kkejriwa@softwareag.com,amdh@softwareag.com,skum@softwareag.com,mabh@softwareag.com,anat@softwareag.com" -DJunitInstallMachine=vmbibh02 -DJunitServerMachine=vmbibh02 -DREVISION_DATE=HEAD -Dfile=build_compile.xml -Dtn.machinename=localhost compile.BuildJunits && exit %%ERRORLEVEL%%"'
+Buildfile: job-targets.xml
+
+compile.BuildJunits:
+Trying to override old definition of task antlib:org.jacoco.ant:coverage
+Trying to override old definition of task antlib:org.jacoco.ant:agent
+Trying to override old definition of task antlib:org.jacoco.ant:report
+Trying to override old definition of task antlib:org.jacoco.ant:merge
+Trying to override old definition of task antlib:org.jacoco.ant:dump
+Trying to override old definition of task antlib:org.jacoco.ant:instrument
+
+set.os.type:
+
+compile.Testjunit:
+     [echo] NOT INSIDE AIX BLOCK
+    [javac] Compiling 172 source files to C:\Jenkins\workspace\000_Compile_Junits\junit\classes
+    [javac] C:\Jenkins\workspace\000_Compile_Junits\junit\src\jucore\com\wm\junit\utils\ProfileGroupUtil.java:5: warning: PerformanceLogger is internal proprietary API and may be removed in a future release
+    [javac] import sun.misc.PerformanceLogger;
+    [javac]                ^
+    [javac] Note: Some input files use or override a deprecated API.
+    [javac] Note: Recompile with -Xlint:deprecation for details.
+    [javac] Note: Some input files use unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+    [javac] 1 warning
+
+BUILD SUCCESSFUL
+Total time: 36 seconds
+INFO: Successfully loaded installed products from: C:\SoftwareAG/install/products
+INFO: Successfully loaded product date/version from file: C:\SoftwareAG/install/products/TN*
+Email was triggered for: Success
+Sending email for trigger: Success
+Sending email to: spol@softwareag.com kkejriwa@softwareag.com amdh@softwareag.com skum@softwareag.com mabh@softwareag.com anat@softwareag.com
+Notifying upstream projects of job completion
+Finished: SUCCESS
+Completed 000_Compile_Junits #456 : SUCCESS
+[Tue May 20 11:54:31 IST 2014] Run: run0, Strategy: TNFunctionalTesting - end
+[Tue May 20 11:54:31 IST 2014] Run: run0 - end

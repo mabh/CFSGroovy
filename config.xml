@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manager>
+	<run name="run0">
+		<machine name="m1" image="win2012serv"/>
+		<machine name="m2" image="win8"/>
+		<machine name="m3" image="win2008"/>
+		<machine name="m4" image="win2012serv"/>
+		<machine name="m5" image="win2012serv"/>
+		<log file="src/run0.log"/>
+		<strategy name="TNFunctionalTesting" class="com.wm.tn.manager.strategies.TNFunctionalTestingStrategy">
+			<!-- these params defined and required inside this strategy -->
+			<parameter name="tnserverHN" value="m1" type="machine" property="hostname"/>
+			<parameter name="tnserverIP" value="m2" type="machine" property="ip"/>
+			<parameter name="tnserverID" value="m3" type="machine" property="machineId"/>
+			<parameter name="someparam" value="123"/>
+			<parameter name="jenkinsServer" value="http://vmspol02:8080"/>
+			<parameter name="jenkinsJob0" value="000_Compile_Junits"/>
+			<!--  property for machine are fixed . generally property names for typenames are fixed. 
+					property names should match the ones called in TypeMap class
+			-->
+			<!--  type = optional XSD: <xs:attribute name="type" type="xs:string" use="optional"/>  -->
+			<!--  if type is defined the value of param is extracted using type logic for eg machine logic is by VM -->
+		</strategy>
+	</run>
+</manager>
